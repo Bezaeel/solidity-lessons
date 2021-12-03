@@ -26,4 +26,8 @@ contract DataOps {
     function getValue(uint val) external view returns (bool) {
         return data.isExist(val);
     }
+
+    function squares(uint[] memory arr) external view returns (uint[] memory){
+        
+    }
 }

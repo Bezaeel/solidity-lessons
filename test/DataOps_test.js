@@ -1,6 +1,6 @@
 var DataOps = artifacts.require("DataOps");
 contract("DataOps", accts => {
-    it.only("should return true for existing value", async () => {
+    it("should return true for existing value", async () => {
         let inst = await DataOps.deployed();
         let result = await inst.getValue(2);
         console.log(result);
